@@ -24,10 +24,10 @@ function App() {
 
   const updateItem = (itemToUpdate) => {
     console.log('Update from App.jsx');
-    axios.put(`/list/${itemToUpdate.id}`)
+    axios.put(`/gallery/like/${itemToUpdate.id}`)
         .then(response => {
             //retrieves updated item list:
-            getItems();
+            getGallery();
             console.log('Updated', itemToUpdate)
         }).catch(err => {
             console.log('Error in update', err);
@@ -40,9 +40,11 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <p>Gallery goes here</p>
+        <p>My Photo Gallery</p>
         {/* <img src="images/goat_small.jpg"/> */}
-        <GalleryList galleryList={galleryList}/>
+        <GalleryList galleryList={galleryList}
+          updateItem={updateItem}
+        />
       </div>
     );
 }
