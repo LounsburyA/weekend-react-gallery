@@ -13,3 +13,8 @@
   font-size: 1.5em;
 }
 
+.photos {
+  padding: 15px;
+  height: 150px;
+  width: 150px;
+}
