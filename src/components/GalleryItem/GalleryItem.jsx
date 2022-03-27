@@ -13,8 +13,8 @@ function GalleryItem({ photo, updateItem }) {
     setIsShowing(!isShowing)
   }
   return (
-    <>
-      <div className='photoItem' onClick={handleShow}>
+    <div className='container'>
+      <div onClick={handleShow}>
         {isShowing ? <p>{photo.description}</p> : <img className="photos" src={photo.path} />}
       </div>
 
@@ -22,11 +22,11 @@ function GalleryItem({ photo, updateItem }) {
         <button onClick={handleLike}>Like</button>
       </div>
 
-      <div>
+      <div className='container'>
         <p> {photo.likes} People liked this</p>
       </div>
 
-    </>
+    </div>
   )
 }
 export default GalleryItem;

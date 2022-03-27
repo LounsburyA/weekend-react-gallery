@@ -3,9 +3,9 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: lightgreen;
   padding: 1em;
-  color: white;
+  color:orange;
   margin-bottom: 1em;
 }
 
@@ -17,4 +17,13 @@
   padding: 5px;
   height: 100px;
   width: 100px;
+  border: 1px solid lime;
+  background-color: lightblue;
+}
+
+body{
+  background-color: blanchedalmond;
+}
+.container {
+  justify-items: start | end | center | stretch;
 }
