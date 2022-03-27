@@ -40,7 +40,7 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <p>My Photo Gallery</p>
+        
         {/* <img src="images/goat_small.jpg"/> */}
         <GalleryList galleryList={galleryList}
           updateItem={updateItem}

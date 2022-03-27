@@ -7,6 +7,7 @@
   padding: 1em;
   color:orange;
   margin-bottom: 1em;
+  border: 2px solid lightblue;
 }
 
 .App-title {
@@ -14,9 +15,10 @@
 }
 
 .photos {
+  display:inline-block;
   padding: 5px;
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   border: 1px solid lime;
   background-color: lightblue;
 }
@@ -25,5 +27,38 @@ body{
   background-color: blanchedalmond;
 }
 .container {
-  justify-items: start | end | center | stretch;
+  display:inline-block;
+  border: 1px solid lightblue;
+  background-color: lightgreen;
+  background:rgba(54, 25, 25, .00);
+  padding: 5px;
+  grid-area: 3px;
+}
+  
+
+h2{
+
+  background-color: lightgreen;
+  padding: 1em;
+  color:orange;
+  margin-bottom: 1em;
+}
+.like {
+  padding: 3px;
+  background-color: aliceblue;
+}
+.desc{
+  
+  display:inline-block;
+  padding: 5px;
+  height: 100px;
+  width: 100px;
+  border: 1px solid lime;
+  background-color: lightblue;
+
+}
+body{
+  background-image: url('https://cdn.wallpapersafari.com/78/81/sbPIkM.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
 }
