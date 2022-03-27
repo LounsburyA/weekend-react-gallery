@@ -10,6 +10,7 @@ function GalleryList({ galleryList, updateItem }) {
                 key={photo.id}
                 photo = {photo}
                 updateItem={updateItem}
+                description ={photo.description}
             />)
 
             )}
